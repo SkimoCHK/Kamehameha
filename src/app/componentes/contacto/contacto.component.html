@@ -1,0 +1,34 @@
+
+
+<div class="container">
+    <h2>¡Contacta conmigo!</h2>
+    <p>Si estás interesado en contactarme, déjame un mensaje con tus datos a continuación:</p>
+
+    <form (submit)="enviarMensaje()">
+        <div class="form-group" hidden>
+            <label for="To">Número de Destinatario:</label>
+            <input type="text" id="To" name="To" class="form-control" required readonly value="+526441348634">
+        </div>
+    
+        <div class="form-group">
+            <label for="Message">Mensaje:</label>
+            <textarea id="Message" name="Message" class="form-control" [(ngModel)]="telefono.Mensaje" required></textarea>
+        </div>
+    
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg">Enviar Mensaje</button>
+        </div>
+    </form>
+    
+
+    <div id="alert" class="alert" style="display: none;"></div>
+
+    <div class="alert alert-success mt-3" id="successMessage" [style.display]="successMessageVisible ? 'block' : 'none'">
+        ¡Mensaje enviado exitosamente!
+    </div>
+
+    <!-- Alerta de error -->
+    <div class="alert alert-danger mt-3" id="errorMessage" [style.display]="errorMessageVisible ? 'block' : 'none'">
+        Error al enviar el mensaje. Por favor, inténtalo de nuevo.
+    </div>
+</div>

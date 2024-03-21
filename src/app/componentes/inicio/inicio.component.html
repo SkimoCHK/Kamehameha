@@ -1,0 +1,92 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+<div class="container">
+    <main role="main" class="pb-3">
+        <!-- Contenido principal de la página -->
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://i.ibb.co/Wc5DSDb/yoxd.jpg" alt="Tu Foto" class="img-fluid profile-img">
+                </div>
+                <div class="col-md-8">
+                    <h1 class="display-4">Acerca de Mí</h1>
+                    <p>¡Hola! Soy Alex, un apasionado estudiante de la Universidad Tecnológica del Sur de Sonora (UTS), donde estoy enfocado en estudiar Tecnologías de la Información con orientación al desarrollo de software multiplataforma. Además de mis estudios, tengo un gran interés en la ciberseguridad y estoy comprometido en aprender más sobre este emocionante campo.</p>
+                    <p>En mi tiempo libre, disfruto explorar nuevas tecnologías, contribuir a proyectos de código abierto y compartir mis conocimientos con la comunidad. Siempre estoy buscando oportunidades para crecer como profesional y continuar mi aprendizaje en el mundo de la tecnología.</p>
+                    <h2>Habilidades</h2>
+                    <ul class="skills">
+                        <li (click)="showSkillDetails('Desarrollo Web')">Desarrollo Web</li>
+                        <li (click)="showSkillDetails('SQL Server')">SQL Server</li>
+                        <li (click)="showSkillDetails('C#')">C#</li>
+                        <li (click)="showSkillDetails('Redes')">Redes</li>
+                        <li (click)="showSkillDetails('Ciberseguridad')">Ciberseguridad</li>
+                        <li (click)="showSkillDetails('Diseño Web')">Diseño Web</li>
+                    </ul>
+                </div>
+                <div class="modal" *ngIf="skillTitle">
+                    <div class="modal-content">
+                        <span class="close" (click)="closeSkillDetails()">&times;</span>
+                        <h2>{{ skillTitle }}</h2>
+                        <p>{{ skillDescription }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="skillModal" class="modal">
+            <div class="modal-content">
+                <span class="close" (click)="closeSkillDetails()">&times;</span>
+                <h2>{{ skillTitle }}</h2>
+                <p>{{ skillDescription }}</p>
+            </div>
+        </div>
+        <div class="container my-5">
+            <h2 class="display-4">Proyectos</h2>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://i.ibb.co/XYBFNZJ/apartado.jpg" alt="Proyecto 1" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Sistema de apartado de aulas</h5>
+                            <p class="card-text">
+                                Desarrollo de un sistema de apartado de aulas completamente funcional utilizando C# con ASP.NET Core MVC.
+                                Diseño e implementación de la base de datos en SQL Server para gestionar los datos del sistema.
+                                Colaboración en un equipo multidisciplinario para analizar y comprender los requisitos del proyecto.
+                                Desarrollo de interfaces de usuario intuitivas y eficientes para maestros y administradores.
+                                Documentación completa de diseño, desarrollo y funcionamiento del proyecto.
+                                Presentación del proyecto y sus logros ante el cuerpo docente y otros estudiantes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://i.ibb.co/Kbhn0gf/escaneov2.png" alt="Proyecto 2" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Pentesting en servidores</h5>
+                            <p class="card-text">
+                                Realicé una exhaustiva evaluación de seguridad en una red pequeña, aplicando técnicas de pentesting y auditoría de seguridad.
+                                Utilicé herramientas de vanguardia como Wireshark, Nmap y Metasploit para escanear la red, identificar vulnerabilidades y detectar posibles amenazas.
+                                Operando desde el sistema operativo Kali Linux, llevé a cabo pruebas de intrusión controladas para violar las vulnerabilidades identificadas.
+                                Trabajé en estrecha colaboración con la empresa para remendar las fallas de seguridad y mejorar la protección de la red.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://i.ibb.co/pWX5K1q/active.png" alt="Proyecto 3" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Active Directory</h5>
+                            <p class="card-text">
+                                Actualmente estoy trabajando en un proyecto que se enfoca en encontrar vulnerabilidades en sistemas Active Directory.
+                                Este proyecto se encuentra en construcción y está orientado a mejorar la seguridad de sistemas de autenticación en redes empresariales..
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>

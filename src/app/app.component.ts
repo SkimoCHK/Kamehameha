@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { Certificacion } from './models/Certificacion';
+import { ProyectoService } from './servicios/proyecto.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'] // Cambio aquí
 })
 export class AppComponent {
-  title = 'PORTAFOLIO';
+
 }

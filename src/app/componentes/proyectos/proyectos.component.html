@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>Certificaciones</h2>
+   
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Nombre Certificación</th>
+                <th>Entidad Emisora</th>          
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let certificados of certificado">
+                <td>{{certificados.nombre}}</td>
+                <td>{{certificados.entidad}}</td>
+              </tr>
+        </tbody>
+    </table>
+    <p>Estas certificaciones representan mis logros y habilidades en el campo de la tecnología. Cada una de ellas respalda mi conocimiento y experiencia en áreas específicas. Si deseas obtener más información sobre alguna de mis certificaciones, no dudes en contactarme.</p>
+  </div>
