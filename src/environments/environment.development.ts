@@ -1,3 +1,3 @@
 export const environment = {
-    apiUrl:'http://alexgpportafolio.somee.com/api'
+    apiUrl:'http://elbicho7.somee.com/api'
 };

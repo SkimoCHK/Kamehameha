@@ -6,6 +6,7 @@ import { InicioComponent } from './componentes/inicio/inicio.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 
 const routes: Routes = [
+  { path: '', component: InicioComponent },
   {path:'proyectos',component: ProyectosComponent},
   {path:'vacio',component:AppComponent},
   {path:'index',component:InicioComponent},
