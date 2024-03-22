@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { GatillosComponent } from './componentes/gatillos/gatillos.component';
+import { NasaComponent } from './componentes/nasa/nasa.component';
+import { NeowsComponent } from './componentes/neows/neows.component';
+
 
 const routes: Routes = [
   { path: '', component: InicioComponent },
@@ -12,7 +15,9 @@ const routes: Routes = [
   {path:'vacio',component:AppComponent},
   {path:'index',component:InicioComponent},
   {path:'contactame',component:ContactoComponent},
-  {path:'gatos',component:GatillosComponent}
+  {path:'gatos',component:GatillosComponent},
+  {path:'nasa',component:NasaComponent},
+  {path:'objetos',component:NeowsComponent}
 ];
 
 @NgModule({

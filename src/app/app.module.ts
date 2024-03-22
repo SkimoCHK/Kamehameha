@@ -8,6 +8,8 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { GatillosComponent } from './componentes/gatillos/gatillos.component';
+import { NasaComponent } from './componentes/nasa/nasa.component';
+import { NeowsComponent } from './componentes/neows/neows.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { GatillosComponent } from './componentes/gatillos/gatillos.component';
     ProyectosComponent,
     InicioComponent,
     ContactoComponent,
-    GatillosComponent
+    GatillosComponent,
+    NasaComponent,
+    NeowsComponent
   ],
   imports: [
     BrowserModule,

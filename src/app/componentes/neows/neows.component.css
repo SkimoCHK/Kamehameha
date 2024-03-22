@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+  }
+  
+  .card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .details {
+    font-size: 16px;
+  }
+  
+  .details p {
+    margin: 5px 0;
+  }
+  

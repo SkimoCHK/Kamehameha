@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="header">
+      <h1>Astronomy Picture of the Day</h1>
+    </div>
+  
+    <div class="content">
+      <div *ngIf="astronomyPicture" class="astronomy-picture">
+        <h2>{{ astronomyPicture.title }}</h2>
+        <img [src]="astronomyPicture.url" alt="{{ astronomyPicture.title }}">
+        <p>{{ astronomyPicture.explanation }}</p>
+      </div>
+  
+    </div>
+  </div>
+  

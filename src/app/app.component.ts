@@ -8,5 +8,5 @@ import { ProyectoService } from './servicios/proyecto.service';
   styleUrls: ['./app.component.css'] // Cambio aquí
 })
 export class AppComponent {
-
+title ="PORTAFOLIO"
 }
