@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
+import { GatillosComponent } from './componentes/gatillos/gatillos.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { ContactoComponent } from './componentes/contacto/contacto.component';
     AppComponent,
     ProyectosComponent,
     InicioComponent,
-    ContactoComponent
+    ContactoComponent,
+    GatillosComponent
   ],
   imports: [
     BrowserModule,
